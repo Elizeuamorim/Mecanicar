@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+
+<h:head>
+	<script name="jquery/jquery.js" library="primefaces"></script>
+</h:head>
+
+<h:body>
+
+	<pm:page id="tipoServico">
+
+		<pm:header title="Serviços Mecanica" />
+		<pm:content>
+			<h:form id="frmMecanico">
+				<p:outputLabel value="Informe o seu e-mail ou nome:" />
+				<p:inputText value="#{serv.email}" />
+				<p:commandButton value="Acessar" action="duvidas.ifba" />
+			</h:form>
+		</pm:content>
+
+	</pm:page>
+
+</h:body>
+
+</html>
